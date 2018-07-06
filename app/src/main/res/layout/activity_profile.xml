@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.users.Profile">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="146dp"
+        android:layout_height="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/imageview"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/download" />
+
+
+    <EditText
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/profile_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-229dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/tv_currWeight"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName|number" />
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/profile_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/profile_age"
+        android:layout_width="47dp"
+        android:layout_height="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="216dp"
+        android:layout_toStartOf="@+id/profile_gender"
+        android:text="Current Weight" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/profile_gender"
+        android:text="Target Weight:" />
+
+    <EditText
+        android:id="@+id/tv_targetWeight"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/tv_currWeight"
+        android:layout_toEndOf="@+id/profile_gender"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName|number" />
+
+    />
+
+</RelativeLayout>
